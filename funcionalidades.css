@@ -1,0 +1,46 @@
+.principe{
+    width: 100%;
+    background: #fff;
+    text-align: justify;
+    height: auto;
+}
+
+.allusers{
+    
+}
+
+.allusers li{
+    display: inline-block;
+    position: center;
+    width: 25%;
+}
+
+.users{
+    margin: 20px;
+    width: auto;
+    border:solid #000;
+    border-radius: 10px;
+    
+}
+
+.users h2{
+    text-align: center;
+}
+
+.usertype{
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.list{
+    text-align: center;
+    padding: 0%;
+}
+
+.doing{
+    left: 0;
+    line-height: 1.5;
+    font-size: large;
+}
