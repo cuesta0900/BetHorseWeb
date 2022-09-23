@@ -1,26 +1,30 @@
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
 .principe{
     width: 100%;
     background: #fff;
     text-align: justify;
-    height: auto;
-}
+ }
 
 .allusers{
-    
+    margin-left: 50px;
+    margin-bottom: 30px;
 }
 
 .allusers li{
     display: inline-block;
-    position: center;
-    width: 25%;
+    margin-left: 20px;
 }
 
 .users{
-    margin: 20px;
-    width: auto;
+    width: 25vw;
+    margin: 30px;
     border:solid #000;
     border-radius: 10px;
-    
 }
 
 .users h2{
@@ -34,13 +38,12 @@
     padding-bottom: 15px;
 }
 
-.list{
-    text-align: center;
-    padding: 0%;
-}
+.listUl {
+    width: 100%;
+    height: 7rem;
 
-.doing{
-    left: 0;
-    line-height: 1.5;
-    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
