@@ -9,6 +9,8 @@ body{
 header{
     background: #fff;
     padding: 10px 0;
+    position: fixed;
+    width: 100%;
 }
 
 nav{
@@ -38,10 +40,14 @@ ul{
     list-style: none;
 }
 
+.fix{
+    height: 9vw;
+}
+
 .logo_box{
     width: 940px;
-    position: relative;
     margin-left: 30px;
+    position: relative;
 }
 
 .logo{
