@@ -1,3 +1,7 @@
+main{
+    background: #dddddd;
+}
+
 .contato-titulo{
     font-size: 30px;
     font-weight: 30px;
@@ -12,7 +16,7 @@
 
 form{
     margin-top: 20px;
-    margin-left: 20%;
+    margin-left: 30%;
     margin-bottom: 20px;
 }
 
@@ -23,7 +27,7 @@ form label, form legend{
 }
 
 fieldset{
-    width:75%;
+    width:50%;
     padding-left: 5%;
     margin-bottom: 2%;
 }
@@ -55,4 +59,14 @@ fieldset{
     background: #fff;
     color: #000;
     transform: scale(1.2);
+}
+
+.cont-end{
+    text-align: right;
+    margin-right: 50px;
+}
+
+.whatsapp-link{
+    text-decoration: none;
+    color: #000;
 }

@@ -3,8 +3,15 @@
     <head>
         <link href="style.css" rel="stylesheet">
         <link href="contact.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <meta charset="UTF-8"/>
         <title>BetHorse</title>
+        <script>
+            alert("Utilize esse formulário para se comunicar conosco!");
+            dia = new Array("Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado");
+            mes = new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outrobro", "Novembro", "Dezembro");
+            data = new Date;
+        </script>
     </head>
     <body>
         <header>
@@ -26,14 +33,20 @@
         </header>
         <div class="fix"></div>
         
-        <main>
+        <main><br>
             <p class="contato-titulo">CONTATO</p>
+            <p style="text-align: right; margin-right: 20px;">
+                <script type="text/javascript">
+                    document.write (dia[data.getDay()] + ", " + data.getDate() + " de " + mes[data.getMonth()] + " de " + data.getFullYear());
+                </script>
+            </p>
             <p class="cont-texto">
-                Preencha os campos a seguir para entrar em contato co nossa sede
+                Preencha os campos a seguir para entrar em contato com nossa sede
             </p>
             <p class="cont-texto">
                 Nós valorizamos muito a opinião dos nosso clientes, pois aqui na BetHorse é onde sua aposta rende!
             </p>
+            
             <form nmae="frmContato" mwthod="get" action="mailto:teste@mail.com" target="_blank">
                 <fieldset>
                     <legend> Dados Pessoais</legend>
@@ -68,6 +81,9 @@
                     </label>
                     <br>
                 </fieldset>
+                <p class="cont-end">
+                    <a class="whatsapp-link" href="" target="blank"><i class="fa fa-whatsapp"></i>(11) 99999-9999</a>
+                </p>
                 <label><input type="checkbox" class="chk"> Gostaria de receber novidades por email?</label>
                 <input type="submit" value="Enviar fomulário" class="enviar">
             </form>
