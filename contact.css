@@ -1,5 +1,6 @@
 main{
-    background: #dddddd;
+    background-image: url("images/cont-horse.jpg");
+    background-repeat: no-repeat;
 }
 
 .contato-titulo{
@@ -7,29 +8,33 @@ main{
     font-weight: 30px;
     text-align: center;
     font-family: 'Tahoma';
+    color:#fff;
 }
 
 .cont-texto{
     padding:0 0 2% 0;   
     text-align: center; 
+    color: #fff;
 }
 
 form{
     margin-top: 20px;
     margin-left: 30%;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 form label, form legend{
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
+    color: #fff;
 }
 
 fieldset{
     width:50%;
     padding-left: 5%;
     margin-bottom: 2%;
+    background: #2b2c2a;
 }
 
 .input-padrao{
@@ -64,9 +69,11 @@ fieldset{
 .cont-end{
     text-align: right;
     margin-right: 50px;
+    color: #fff;
+    size: 5vw;
 }
 
 .whatsapp-link{
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
