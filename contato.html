@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <link href="contact.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <meta charset="UTF-8"/>
+        <title>BetHorse</title>
+        <script>
+            alert("Utilize esse formulário para se comunicar conosco!");
+            dia = new Array("Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado");
+            mes = new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outrobro", "Novembro", "Dezembro");
+            data = new Date;
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="logo_box">
+                <h1>
+                    <a href="index.html">
+                        <img src="images/logo.png" title="BetHorse Logo" class="logo">
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">Corridas</a></li>
+                        <li><a href="func.html">Funcionalidades</a></li>
+                        <li><a href="contato.html">Fale conosco</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="fix"></div>
+        
+        <main><br>
+            <p class="contato-titulo">CONTATO</p>
+            <p style="text-align: right; margin-right: 20px;; color:#fff;">
+                <script type="text/javascript">
+                    document.write (dia[data.getDay()] + ", " + data.getDate() + " de " + mes[data.getMonth()] + " de " + data.getFullYear());
+                </script>
+            </p>
+            <p class="cont-texto">
+                Preencha os campos a seguir para entrar em contato com nossa sede
+            </p>
+            <p class="cont-texto">
+                Nós valorizamos muito a opinião dos nosso clientes, pois aqui na BetHorse é onde sua aposta rende!
+            </p>
+            
+            <form nmae="frmContato" mwthod="get" action="mailto:teste@mail.com" target="_blank">
+                <fieldset>
+                    <legend> Dados Pessoais</legend>
+                    <label for="nomesobrenome">*Nome Completo</label>
+                    <input type="text" id="nomesobrenome" name="" class="input-padrao" required>
+
+                    <label for="email">*E-mail</label>
+                    <input type="email" id="email" name="" class="input-padrao" required placeholder="seuemail@domain.com">
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="" class="input-padrao" placeholder="(XX) XXXXX-XXXX">
+
+                    <label for="mensagem">*Mesagem</label>
+                    <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+
+                    <label for="contato">Como prefere nosso contato?
+                        <input type="radio" value="radio-mail" name="Contato">Email
+                        <input type="radio" value="radio-telefone" name="Contato">Telefone
+                        <input type="radio" value="radio-whatsapp" name="Contato">Whatsapp
+                    </label>
+                    
+                    <br>
+                    
+                    <label for="horário">Qual o motivo do seu contato
+                        <select>
+                            <option>Selecione</option>
+                            <option>Dúvida</option>
+                            <option>Sugestão</option>
+                            <option>Elogio</option>
+                            <option>Reclamação</option>
+                        </select>
+                    </label>
+                    <br>
+                </fieldset>
+                <p class="cont-end">
+                    <a class="whatsapp-link" href="" target="blank"><i class="fa fa-whatsapp"></i>(11) 99999-9999</a>
+                </p>
+                <label><input type="checkbox" class="chk"> Gostaria de receber novidades por email?</label>
+                <input type="submit" value="Enviar fomulário" class="enviar">
+            </form>
+        </main>
+        <footer>
+            <img src="images/footerlogo.png" class="logo" alt="BetHorse">
+            <p class="copyright">&copy; Copyright BetHorse - 2022</p>
+        </footer>
+        <!--<footer>
+            <img src="images/footerlogo.png" class="logo" alt="BetHorse">
+            <p class="copyright">&copy; Copyright BetHorse - 2022</p>
+        </footer>-->
+    </body>
+</html> 
